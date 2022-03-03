@@ -1,0 +1,149 @@
+/*- MOBILE -*/
+/*- Search Form -*/
+.container{
+    margin: 0 10%;
+}
+
+.search-form {
+    margin: 40px 0;
+}
+
+.search-form h3{
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.search-input{
+    display: flex;
+}
+
+.search-form input{
+    width: 95%;
+    height: 40px;
+    background: #fffdf4;
+    border: 1px #d3d2ce solid;
+    border-right: none;
+    border-radius: 2px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    padding-left: 10px;
+    color: #777777;
+}
+
+.search-form input:focus{
+    outline: none;
+}
+
+.search-form .search-button{
+    display: flex;
+    justify-content: flex-end;
+    width: 20px;
+    padding-top: 8px;
+    height: 44px;
+    background: #fffdf4;
+    border: 1px #d3d2ce solid;
+    border-left: none;
+    border-radius: 2px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    cursor: pointer;
+}
+
+/*- End Search Form -*/
+
+/*- Results -*/
+.article {
+    padding: 10px ;
+    background-color: #f8f8f8;
+    border: 1px #d3d2ce solid;
+    text-align: center;
+}
+
+.article:first-of-type{
+    margin-top: 10px;
+}
+
+.article a{
+    text-decoration: none;
+    color:  #646464 ;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.nav-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navLink{
+    color: rgb(77, 126, 229);
+    font-weight: bold;
+}
+
+.next-button{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.next-button::after{
+    content: ">";
+    color: rgb(77, 126, 229);
+}
+
+.back-button{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.back-button::before{
+    content: "<";
+    color: rgb(77, 126, 229);
+}
+
+/*- End Results -*/
+
+/*- DESKTOP -*/
+@media(min-width: 1024px){
+    /*- Search Form -*/
+    .container{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    .search-form {
+        margin-top: 100px;
+    }
+
+    .search-form h3{
+        font-size: 1.3rem;
+    }
+
+    .search-form input{
+        width: 98%;
+        height: 60px;
+        font-size: 1.1rem;
+    }
+
+    .search-form .search-button{
+        padding-top: 18px;
+        height: 64px;
+    }
+    /*- End Search Form -*/
+
+    /*- Results -*/
+    .results strong{
+        font-size: 1.3rem;
+    }
+
+    .article{
+        padding: 18px;
+        text-align: left;
+    }
+
+    .article a{
+        font-size: 1.1rem;
+    }
+    /*- End Results -*/
+}

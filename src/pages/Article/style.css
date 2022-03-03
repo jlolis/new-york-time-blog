@@ -1,0 +1,55 @@
+/*- MOBILE -*/
+.container{
+    margin: 0 10%;
+    margin-top: 100px;
+}
+
+.navLink{
+    color: rgb(77, 126, 229);
+    font-weight: bold;
+    font-weight: 600;
+}
+
+#goBackLink:before{
+    content: "<";
+    color: rgb(77, 126, 229);
+}
+
+.articleContent h1{
+    font-size: 1.3rem;
+    margin-top: 30px;
+}
+
+.articleContent span{
+    font-style: italic;
+}
+
+/*- End MOBILE -*/
+
+/*- DESKTOP -*/
+@media(min-width: 1024px){
+    .container{
+        max-width: 900px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+
+    .navLink{
+        font-size: 1.3rem;
+    }
+
+    .articleContent h1{
+        font-size: 2.2rem;
+    }
+
+    .articleContent span{
+        font-size: 1.2rem;
+    }
+
+    .articleContent p{
+        font-size: 1.2rem;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+}
+/*- End DESKTOP -*/
